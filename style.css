@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+/* Some Common Styling */
+img {
+    width: 100%;
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.title {
+    font-size: 2.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e8630a;
+}
+.item_preTitle{
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: 300;
+}
+
+/* Layout Styling */
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background-color: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+.group_1, .group_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Some Profile Styling */
+.profile_container {
+    display: flex;
+    gap: 4rem;
+}
+
+.first_name {
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: uppercase;
+}
+
+.last_name {
+    color: #e8630a;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    font-weight: 600;
+    display: block;
+}
+
+.profile_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}
+
+/* Expertise */
+.skill_list {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    color: gray;
+    line-height: 2;
+}
+/* Reference */
+.ref_item{
+    margin-top: 2rem;
+}
+.ref_name{
+    font-size: 1.6rem;
+    font-weight: 700;
+
+}
+/* Education */
+.edu_item{
+    margin-top: 1.7rem;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+    margin: 0.6rem 0;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: gray;
+    font-weight: 400;
+}
+/* Certification */
+.certification{
+    margin-top: 2rem;
+}
+/* Experience */
+.exp_item{
+    margin-top: 2rem;
+}
+/* Awards */
+.awards_item{
+    margin-top: 2rem;
+}
+/* Interest */
+.interest_items{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.interest_item{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: gray;
+}
+.interest_item svg{
+    width: 2rem;
+}
