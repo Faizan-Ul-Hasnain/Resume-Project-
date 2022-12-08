@@ -52,16 +52,33 @@ img {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+.group_3{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.group_3 > div{
+    flex: 1;
+}
 
+@media only screen and (max-width: 768px) {
+    .group_3{
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width:768px) {
     .container {
         width: 100%;
         grid-template-columns: 1fr;
         padding: 3rem;
-        gap: 7rem;
+        gap: 2rem;
     }
 }
-
 .profile {
     grid-column: 1 / -1;
     margin-bottom: 2rem;
@@ -71,16 +88,16 @@ img {
     flex-direction: column;
     gap: 3rem;
 }
-.group_3{
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    grid-column: 1/-1;
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    justify-content: flex-start;
-    align-items: center;
+@media only screen and (max-width:768){
+    .group_1, .group_2{
+        gap: 1rem;
+    }
+}
+    
+@media only screen and (min-width: 768px){
+    .certification {
+        margin-top: 1rem;
+    }
 }
 
 /* Some Profile Styling */
@@ -184,12 +201,11 @@ img {
     margin-top: 2rem;
 }
 .social_item{
-    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     font-size: 1.5rem;
-    display: flex;
-    gap: .5rem;
+    display: flex;    
+    gap: 1rem;
     align-items: center;
-    justify-content: flex-start;
     color: gray;
 }
 .social_item:hover{
@@ -197,4 +213,18 @@ img {
 }
 .social_item svg{
     width: 2rem;
+}
+hr{
+    grid-column: 1/-1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-top: 2px solid rgba(105, 102, 102, 0.298);
+}
+@media only screen and (max-width: 768px) {
+    hr{
+        margin: 0 auto;
+    }
 }
